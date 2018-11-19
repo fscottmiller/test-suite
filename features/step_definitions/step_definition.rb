@@ -28,3 +28,25 @@ end
 Then("we will receive a valid response") do
 	expect(@response.kind_of? Net::HTTPSuccess).to eq(true)
 end
+
+### Unit ###
+Given("code requires unit tests before deployment") do
+    puts "we always test our code"
+end
+When("new code is checked in") do
+    puts "new code is in!"
+end
+Then("unit tests will run") do
+    puts "running unit tests here"
+end
+    
+### Security ###
+Given("we are on a login page") do
+    puts "checking security"
+end
+When("we enter an incorrect password") do
+    puts "attempting login with bad password"
+end
+Then("we will not be able to log in") do
+    puts "access denied"
+end
