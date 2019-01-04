@@ -1,25 +1,25 @@
 Feature: Search google
 
-@web
+@web @dev
 Scenario:
 	Given we are on google.com
 	When we search for github
 	Then we will see github in the search results
 	
 	
-@api
+@api @dev
 Scenario:
 	Given we need api data
 	When we query the api
 	Then we will receive a valid response
     
-@unit
+@unit @dev
 Scenario:
     Given code requires unit tests before deployment
     When new code is checked in
     Then unit tests will run
     
-@security
+@security @dev
 Scenario:
     Given we are on a login page
     When we enter an incorrect password
