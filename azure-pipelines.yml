@@ -6,8 +6,9 @@ pool:
 
 steps:
 - script: |
-    sudo apt-get update
-    sudo apt-get install ruby
-    gem install cucumber
-    gem install watir
-    cucumber --format json
+  sudo apt-get install software-properties-common
+  sudo apt-add-repository -y ppa:rael-gc/rvm
+  sudo apt-get update
+  sudo apt-get install rvm
+  rvm install ruby
+  rvm list
