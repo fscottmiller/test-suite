@@ -13,5 +13,5 @@ steps:
     gem install selenium-webdriver
     gem install cucumber
     gem install rspec
-    cucumber
+    cucumber --tags @api
     
