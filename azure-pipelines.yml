@@ -9,3 +9,8 @@ steps:
     curl -sSL https://get.rvm.io | bash -s -- --path $PWD/rvm
     source $PWD/rvm/scripts/rvm
     rvm install ruby
+    gem install watir
+    gem install selenium-webdriver
+    gem install cucumber
+    cucumber
+    
