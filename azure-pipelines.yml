@@ -8,6 +8,6 @@ steps:
 - script: |
     sudo apt-get update
     sudo apt-get install ruby
-    gem install bundler
-    bundle install
-    
+    gem install cucumber
+    gem install watir
+    cucumber --format json
